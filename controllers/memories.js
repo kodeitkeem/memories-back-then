@@ -48,7 +48,7 @@ function edit(req, res){
 function show(req, res){
     Memory.findById(req.params.id, function(err, memory){
         res.render('memories/show', {
-            title: 'Your Memory Details',
+            title: 'Your Memory Detail',
             memory,
             user: req.user
         })
