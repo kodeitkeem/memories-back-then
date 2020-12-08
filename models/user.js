@@ -1,10 +1,14 @@
 const mongoose = require('mongoose');
+const Schema = mongoose.Schema;
 
 const userSchema = new mongoose.Schema({
    name: String,
    email: String,
    avatarURL: String,
-   memory: {},
+   memory: {
+       type: Schema.Types.ObjectId,
+       ref: 'Memory'
+},
    googleId: String, 
 },{timestamps: true})
 

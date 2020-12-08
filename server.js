@@ -21,10 +21,9 @@ require('./config/passport');
 // Require routes
 const indexRouter = require('./routes/index');
 const memoriesRouter = require('./routes/memories');
-const userRouter = require('./routes/users');
 
 // Configure server settings - app.set()
-app.set('view-engine', 'ejs');
+app.set('view engine', 'ejs');
 
 
 // mount middleware - app.use()
@@ -48,7 +47,6 @@ app.use(passport.session());
 // Mount routes
 app.use('/', indexRouter);
 app.use('/memories', memoriesRouter);
-app.use('/', userRouter);
 
 
 // Tell app to listen

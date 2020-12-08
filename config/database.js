@@ -6,7 +6,7 @@ mongoose.connect(process.env.DATABASE_URL || 'mongodb://localhost/memories-back-
     useUnifiedTopology: true
 });
 
-const db = mongoose.connect;
+const db = mongoose.connection;
 
 db.on('connected', function(){
     console.log(`Mongoose connected to:${db.host}:${db.port}`);
