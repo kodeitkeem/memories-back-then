@@ -11,9 +11,9 @@
                 <a href="/memories/new" class="btn btn-large login-btn">ADD YOUR MEMORY<i class="ml-2 fas fa-plus"></i></a>
             </div>
             <div class="row d-flex align-items-center memories-container">
-                <div class="col-md-3 col-12">
-                    <% memories.forEach(function(memory) { %> 
-                    <div class="card" style="width: 16rem;">
+                <% memories.forEach(function(memory) { %> 
+                <div class="col-lg-3 col-md-6 col-12 align-self-stretch">
+                    <div class="card">
                         <div class="card-body">
                             <h5 class="card-title"><%= memory.title %></h5>
                             <p class="card-text"><%= memory.caption %></p>
@@ -21,13 +21,13 @@
                             <% if(memory.uploadedBy.equals(user && user._id)) { %>
                             <div class="d-flex">
                                 <h6 class="username"><%= user.name %></6>
-                                <a href="#" class="card-link">Edit</a>
+                                <a href="/" class="card-link">View</a>
                             </div>
                             <% } %>
                         </div>
                     </div>
-                    <% }) %>
                 </div>
+                <% }) %>
             </div>
         </main>
         <%- include('../partials/footer') %>

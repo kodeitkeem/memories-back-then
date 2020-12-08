@@ -75,7 +75,7 @@ main {
 h1 {
     padding: 10px 0px;
     color: var(--secondary-brand-color);
-    font-size: 80px;
+    font-size: 60px;
     text-transform: uppercase;
     font-weight: 800;
 }

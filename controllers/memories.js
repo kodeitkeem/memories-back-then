@@ -3,7 +3,9 @@ const Memory = require('../models/memory');
 module.exports = {
     index,
     new: newMemory,
-    create
+    create,
+    edit,
+    show
 }
 
 function index(req, res){
@@ -30,5 +32,25 @@ function create(req, res){
     memory.save(function(err){
         console.log(memory);
         res.redirect('/memories')
+    })
+}
+
+function edit(req, res){
+    Memory.findByIdAndUpdate(req.params.id, req.body, function(err, memory){
+        res.render('memories/edit', {
+            title: 'Edit Your Memory',
+            memory, 
+            user: req.user
+        })
+    })
+}
+
+function show(req, res){
+    Memory.findById(req.params.id, function(err, memory){
+        res.render('memories/show', {
+            title: 'Your Memory Details',
+            memory,
+            user: req.user
+        })
     })
 }
