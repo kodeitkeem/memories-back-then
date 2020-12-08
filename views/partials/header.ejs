@@ -1,0 +1,17 @@
+<header class="container">
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+        <a class="navbar-brand" href="/">
+            <img src="/imgs/logo-light" width="40" height="40" class="logo d-inline-block align-top" alt=""
+                loading="lazy">
+        </a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+            </ul>
+        </div>
+       <% if(user) { %>
+        <a href="/logout" class="btn btn-large login-btn" target="_blank">LOG OUT</a>
+        <% } else { %>
+        <a href="/auth/google" class="btn btn-large login-btn" target="_blank">SEE ALL MEMORIES</a>
+        <% } %>
+    </nav>
+</header>
