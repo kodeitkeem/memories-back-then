@@ -1,0 +1,75 @@
+:root {
+    --primary-brand-color: #111111;
+    --secondary-brand-color: #FFFAF3;
+    --primary-font-family: 'Montserrat';
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100;
+    background-color: var(--primary-brand-color);
+}
+
+body {
+    background-color: var(--secondary-brand-color);
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align: center;
+    font-family: var(--primary-font-family), sans-serif;
+}
+
+.navbar {
+    padding-top: 40px !important;
+}
+
+.logo {
+    transition: all .2s ease-in-out;
+}
+
+.logo:hover {
+    transform: scale(1.5);
+}
+
+ul li a {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--secondary-brand-color) !important;
+}
+
+.login-btn {
+    background: var(--primary-brand-color) !important;
+    color: var(--secondary-brand-color) !important;
+    padding: 15px 30px !important;
+    margin-left: 10px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    border-radius: 0px;
+    border: 1px solid var(--secondary-brand-color) !important;
+}
+
+.login-btn:hover {
+    background: var(--primary-brand-color) !important;
+    color: var(--secondary-brand-color) !important;
+}
+
+main {
+    margin-top: 40px;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+}
+
+h1 {
+    padding: 20px 0px;
+    color: var(--secondary-brand-color);
+    font-size: 100px;
+}
+
+.text-dark {
+    color: #52615F;
+}
