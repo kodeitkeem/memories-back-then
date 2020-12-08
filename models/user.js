@@ -8,7 +8,7 @@ const userSchema = new mongoose.Schema({
    memory: {
        type: Schema.Types.ObjectId,
        ref: 'Memory'
-},
+      },
    googleId: String, 
 },{timestamps: true})
 

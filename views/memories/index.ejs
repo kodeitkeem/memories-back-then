@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
     <%- include('../partials/head') %>
     <body class="container-fluid">
@@ -7,21 +8,25 @@
                 <h1> Memories <span class="text-dark">Back Then</span></h1>
                 <h4>Here are the most favored 2020 memories from people like you. Add to the list!</h4>
                 <br />
-                <a href="#" class="btn btn-large login-btn" target="_blank">ADD YOUR MEMORY<i class="ml-2 fas fa-plus"></i></a>
+                <a href="/memories/new" class="btn btn-large login-btn">ADD YOUR MEMORY<i class="ml-2 fas fa-plus"></i></a>
             </div>
             <div class="row d-flex align-items-center memories-container">
                 <div class="col-md-3 col-12">
-                    <div class="card" style="width: 18rem;">
+                    <% memories.forEach(function(memory) { %> 
+                    <div class="card" style="width: 16rem;">
                         <div class="card-body">
-                            <h5 class="card-title">Met gala balling</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <p class="card-text">Dec 13, 2020</p>
+                            <h5 class="card-title"><%= memory.title %></h5>
+                            <p class="card-text"><%= memory.caption %></p>
+                            <p class="card-text"><%= memory.createdAt.toLocaleDateString() %></p>
+                            <% if(memory.uploadedBy.equals(user && user._id)) { %>
                             <div class="d-flex">
-                                <h6>Akeem Dainty</6>
+                                <h6 class="username"><%= user.name %></6>
                                 <a href="#" class="card-link">Edit</a>
                             </div>
+                            <% } %>
                         </div>
                     </div>
+                    <% }) %>
                 </div>
             </div>
         </main>

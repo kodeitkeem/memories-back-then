@@ -4,6 +4,8 @@ const router = express.Router();
 const memoriesCtrl = require('../controllers/memories');
 
 router.get('/', isLoggedIn, memoriesCtrl.index);
+router.get('/new', isLoggedIn, memoriesCtrl.new);
+router.post('/', isLoggedIn, memoriesCtrl.create);
 
 function isLoggedIn(req, res, next){
     if(req.isAuthenticated()) return next();

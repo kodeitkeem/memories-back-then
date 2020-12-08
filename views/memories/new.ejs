@@ -4,12 +4,27 @@
     <body class="container-fluid">
         <%- include('../partials/header') %>
         <main class="container">
-            <div class="row d-flex flex-column justify-content-center align-items-left">
-                <a href="#" class="btn btn-large login-btn" target="_blank"><i class="fas fa-long-arrow-alt-left mr-4"></i>BACK TO MEMORIES</a>
-            </div>
-            <div class="row d-flex flex-column justify-content-center align-items-center">
+            <div class="row d-flex flex-column justify-content-start align-items-center mt-4">
                 <h1> Upload <span class="text-dark">A Memory</span></h1>
                 <h4>Upload one of your favorite 2020 memories to share with the world!</h4>
+            </div>
+            <div class="row d-flex flex-column justify-content-center align-items-center">
+                <div class="col-md-6">
+                    <form method="POST" action="/memories">
+                        <div class="form-group">
+                            <label for="title" class="text-white">Title</label>
+                            <input type="text" class="form-control" name="title" placeholder="Enter a title" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="caption" class="text-white">Caption</label>
+                            <textarea class="form-control" name="caption" placeholder="Enter a caption" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <a href="/memories" class="btn btn-danger">Cancel</a>
+                            <button type="submit" class="btn btn-large btn-primary">ADD YOUR MEMORY</button>
+                        </div>
+                    </form>
+                </div>
             </div>
         </main>
         <%- include('../partials/footer') %>

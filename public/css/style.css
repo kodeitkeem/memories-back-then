@@ -19,7 +19,7 @@ body {
     display: flex;
     flex-direction: column;
     height: 100vh;
-    align: center;
+    align-items: center;
     font-family: var(--primary-font-family), sans-serif;
 }
 
@@ -117,6 +117,32 @@ h2, h3, h4, p {
     margin: 0px 0px 0 50px;
     text-decoration: underline;
     color: var(--secondary-brand-color);
+}
+
+form {
+    margin-top: 60px;
+}
+
+form input, form textarea {
+    background-color: var(--primary-brand-color) !important;
+    border-radius: 0px !important;
+}
+
+form button, form a {
+    background: var(--primary-brand-color) !important;
+    color: var(--secondary-brand-color) !important;
+    padding: 15px 30px !important;
+    margin-top: 20px;
+    font-weight: 600 !important;
+    letter-spacing: 2px !important;
+    border-radius: 0px !important;
+    border: 1px solid var(--secondary-brand-color) !important;
+    width: 100%;
+}
+
+form button {
+    background: var(--secondary-brand-color) !important;
+    color: var(--primary-brand-color) !important;
 }
 
 footer {
