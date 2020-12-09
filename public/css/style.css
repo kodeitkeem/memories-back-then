@@ -36,7 +36,7 @@ body {
 }
 
 ul li a {
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 500;
     color: var(--secondary-brand-color) !important;
 }
@@ -75,7 +75,7 @@ main {
 h1 {
     padding: 10px 0px;
     color: var(--secondary-brand-color);
-    font-size: 60px;
+    font-size: 3.75rem;
     text-transform: uppercase;
     font-weight: 800;
 }
@@ -105,7 +105,7 @@ h2, h3, h4, p {
 }
 
 .card p {
-    color: #6B6B6B;
+    color: #8B8B8B;
 }
 
 .card h6 {
@@ -144,6 +144,40 @@ form button {
     background: var(--secondary-brand-color) !important;
     color: var(--primary-brand-color) !important;
 }
+
+.details-container .card {
+    height: 100%;
+}
+
+.details-container h5 {
+    font-size: 2.5rem !important;
+}
+
+.details-container h6 {
+    font-weight: normal;
+    color: #8B8B8B;
+}
+
+.bold {
+    font-weight: 600;
+    color: var(--secondary-brand-color);
+}
+
+.show-button-row {
+    margin-top: 40px;
+}
+
+.show-button-row a {
+    background: var(--primary-brand-color) !important;
+    color: var(--secondary-brand-color) !important;
+    padding: 15px 30px !important;
+    margin-top: 20px;
+    font-weight: 600 !important;
+    letter-spacing: 2px !important;
+    border-radius: 0px !important;
+    border: 1px solid var(--secondary-brand-color) !important;
+    width: 100%;
+} 
 
 footer {
     padding: 40px 0px;

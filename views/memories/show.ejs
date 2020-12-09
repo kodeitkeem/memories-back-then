@@ -4,10 +4,30 @@
     <body class="container-fluid">
         <%- include('../partials/header') %>
         <main class="container">
-            <div class="row d-flex flex-column justify-content-start align-items-center mt-4">
-                <h1> Edit <span class="text-dark">Your Memory</span></h1>
-                <h4>Upload one of your favorite 2020 memories to share with the world!</h4>
+            <div class="row d-flex flex-column justify-content-center align-items-center mt-4">
+                <h1> Memory <span class="text-dark">Details</span></h1>
+                <h4>Here are the details of your memory</h4>
             </div>
+            <div class="row d-flex flex-column justify-content-start align-items-center mt-4">
+                <div class="details-container col-10 d-flex flex-column align-items-left">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title"><%= memory.title %></h5>
+                            <p class="card-text"><%= memory.caption %></p>
+                            <p class="card-text"><span class="bold">Uploaded at :</span> <%= memory.createdAt.toLocaleDateString() %></p>
+                            <% if(memory.uploadedBy.equals(user && user._id)) { %>
+                            <h6 class=""><span class="bold">Uploaded by : </span><span class="username"><%= user.name %></span></6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="show-button-row row d-flex justify-content-center align-items-center">
+                <div class="align-items-center justify-content-center">
+                    <a href="/memories" class="btn btn-large">BACK TO MEMORIES</a>
+                    <a href="/memories/<%= memory._id %>/edit" class="btn btn-large card-link">EDIT MEMORY</a>
+                </div>
+            </div>
+            <% } %>
         </main>
         <%- include('../partials/footer') %>
     </body>
