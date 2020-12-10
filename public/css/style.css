@@ -65,6 +65,10 @@ ul li {
     text-transform: capitalize;
 }
 
+.main {
+    margin-top: -100px;
+}
+
 main {
     margin-top: 40px;
     display: flex;
@@ -124,9 +128,12 @@ form {
 }
 
 form input, form textarea {
-    background-color: var(--primary-brand-color) !important;
+    background-color: var(--secondary-brand-color) !important;
     border-radius: 0px !important;
+    color: #000000 !important;
 }
+
+
 
 form button, form a {
     background: var(--primary-brand-color) !important;
@@ -179,6 +186,150 @@ form button {
     width: 100%;
 } 
 
+.modal {
+    position: relative !important;
+    max-width: 600px;
+    height: 300px;
+    background: var(--primary-brand-color);
+    border-radius: 0px;
+    border: 1px solid var(--secondary-brand-color);
+}
+
+.modal button {
+    background: var(--secondary-brand-color) !important;
+    color: var(--primary-font-family) !important;
+    padding: 15px 30px !important;
+    margin-top: 20px;
+    font-weight: 600 !important;
+    letter-spacing: 2px !important;
+    border-radius: 0px !important;
+    border: 1px solid var(--secondary-brand-color) !important;
+    width: 100% !important;
+} 
+
+.modal a.btn {
+    background: var(--primary-brand-color);
+    color: var(--secondary-brand-color) !important;
+    padding: 15px 30px !important;
+    margin-top: 20px;
+    font-weight: 600 !important;
+    letter-spacing: 2px !important;
+    border-radius: 0px !important;
+    border: 1px solid var(--secondary-brand-color) !important;
+    width: 100% !important;
+}
+
+.modal form {
+    width: 100% !important;
+    margin-top: 0px !important;
+}
+
+.modal a.close-modal {
+    display: none !important;
+}
+
 footer {
     padding: 40px 0px;
+}
+
+@media only screen and (max-width: 768px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    h4 {
+        margin-top: 20px;
+        font-size: 1.25rem;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .navbar {
+        padding: 0;
+    }
+
+    header.container {
+        padding: 0px;
+    }
+
+    h1 {
+        font-size: 3.5rem;
+        text-align: left;
+    }
+
+    h4 {
+        margin-top: 20px;
+        font-size: 1.5rem;
+        text-align: left;
+    }
+
+    .break {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .navbar {
+        padding: 0;
+    }
+
+    h1 {
+        font-size: 3.2rem;
+        text-align: left;
+    }
+
+    h4 {
+        margin-top: 20px;
+        font-size: 1.125rem;
+        text-align: left;
+    }
+
+
+    .login-btn {
+        width: 250px;
+        font-size: 0.875rem;
+        padding: 10px 2px !important;
+    }
+
+    header.container {
+        padding: 0px;
+    }
+
+}
+
+@media only screen and (max-width: 320px) {
+    h1 {
+        font-size: 2.375rem;
+        text-align: left;
+    }
+
+    h4 {
+        font-size: 1.125rem;
+        text-align: left;
+    }
+
+    footer p {
+        font-size: 0.875rem;
+    }
+
+
+    .login-btn {
+        width: 190px;
+        font-size: 0.875rem;
+        padding: 10px 2px !important;
+    }
+
+    .fas {
+        display: none;
+    }
+
+    header.container {
+        padding: 0px;
+    }
+
+    .details-container h5 {
+        font-size: 1.25rem !important;
+    }
+
+    
 }

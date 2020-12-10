@@ -8,6 +8,9 @@ router.get('/new', isLoggedIn, memoriesCtrl.new);
 router.post('/', isLoggedIn, memoriesCtrl.create);
 router.get('/:id/edit', isLoggedIn, memoriesCtrl.edit);
 router.get('/:id', isLoggedIn, memoriesCtrl.show);
+router.put('/:id', isLoggedIn, memoriesCtrl.update);
+router.delete('/:id', isLoggedIn, memoriesCtrl.delete);
+
 
 function isLoggedIn(req, res, next){
     if(req.isAuthenticated()) return next();

@@ -5,7 +5,9 @@ module.exports = {
     new: newMemory,
     create,
     edit,
-    show
+    show,
+    update,
+    delete: deleteMemory
 }
 
 function index(req, res){
@@ -52,5 +54,21 @@ function show(req, res){
             memory,
             user: req.user
         })
+    })
+}
+
+function update(req, res){
+    Memory.findByIdAndUpdate(req.params.id, req.body, function(err, memory){
+        res.redirect('/memories/<%=memory._id %>', {
+            title: 'Your Memory Details',
+            memory,
+            user: req.user
+        });
+    })
+}
+
+function deleteMemory(req, res){
+    Memory.findByIdAndDelete(req.params.id, function(err, memory){
+        res.redirect('/memories')
     })
 }
