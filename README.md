@@ -22,7 +22,7 @@
 * ![](https://img.shields.io/badge/Bootstrap4-informational?style=flat-square&logo=Bootstrap&logoColor=FFFAF3&color=212121)
 * ![](https://img.shields.io/badge/Node.js-informational?style=flat-square&logo=Node.js&logoColor=FFFAF3&color=212121)
 * ![](https://img.shields.io/badge/MongoDB-informational?style=flat-square&logo=MongoDB&logoColor=FFFAF3&color=212121)
-* ![](https://img.shields.io/badge/Google-informational?style=flat-square&logo=Google&logoColor=FFFAF3&color=212121) Oauth
+* ![](https://img.shields.io/badge/GoogleOauth-informational?style=flat-square&logo=Google&logoColor=FFFAF3&color=212121) 
 
 ## &#x1f3ac; Getting Started
 * Application --> 
