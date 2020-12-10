@@ -133,8 +133,6 @@ form input, form textarea {
     color: #000000 !important;
 }
 
-
-
 form button, form a {
     background: var(--primary-brand-color) !important;
     color: var(--secondary-brand-color) !important;
@@ -241,6 +239,10 @@ footer {
         margin-top: 20px;
         font-size: 1.25rem;
     }
+
+    .card {
+        margin-bottom: 10px;
+    }
 }
 
 @media only screen and (max-width: 428px) {
@@ -266,6 +268,8 @@ footer {
     .break {
         display: none;
     }
+
+    
 }
 
 @media only screen and (max-width: 375px) {
