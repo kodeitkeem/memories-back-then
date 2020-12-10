@@ -6,13 +6,13 @@
 * It's  not oblivious that the year 2020 was filled with so much trauma and pain, however, it was also filled with many memories that'll last forever. I created this app for users to share their favorite memory/memories of 2020 with other users, with hopes of forming a community and sense of togetherness. 
 
 ## 	&#x1f511; Features 
-* Some of the apps main/key features are
-** A User has the ability to log into the app, using their google email through the implementation of Google Oauth
-** A User then has the ability to see all the memories that were added to the platform including theirs
-** With the click of a button, A User can upload a memory
-** A User can only view the details of their own memory
-** A User can update their memory if a mistake was made or they just dont like what they wrote
-** A User can delete their memory all together if they dont want the memory to exist of the platform at all
+###### Some of the apps main/key features are
+* A User has the ability to log into the app, using their google email through the implementation of Google Oauth
+* A User then has the ability to see all the memories that were added to the platform including theirs
+* With the click of a button, A User can upload a memory
+* A User can only view the details of their own memory
+* A User can update their memory if a mistake was made or they just dont like what they wrote
+* A User can delete their memory all together if they dont want the memory to exist of the platform at all
 
 ## &#x1f4bb; Technologies
 * ![](https://img.shields.io/badge/HTML5-informational?style=flat-square&logo=HTML5&logoColor=FFFAF3&color=212121)
