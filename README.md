@@ -26,7 +26,7 @@
 * ![](https://img.shields.io/badge/GoogleOauth-informational?style=flat-square&logo=Google&logoColor=FFFAF3&color=212121) 
 
 ## &#x1f3ac; Getting Started
-* Application --> 
+* Application --> (https://memories-back-then.herokuapp.com/)
 * Trello Planning --> (https://trello.com/b/XH3SSkTT/memories-back-then)
 * Click the "See All Memories" Button to login
 * Click "Add Memory"
