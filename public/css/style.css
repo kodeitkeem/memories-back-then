@@ -89,7 +89,7 @@ h2, h3, h4, p {
 }
 
 .text-dark {
-    color: #52615F;
+    color: #575654;
 }
 
 .memories-container {
@@ -109,7 +109,7 @@ h2, h3, h4, p {
 }
 
 .card p {
-    color: #8B8B8B;
+    color: #575654;
 }
 
 .card h6 {
@@ -162,7 +162,7 @@ form button {
 
 .details-container h6 {
     font-weight: normal;
-    color: #8B8B8B;
+    color: #575654;
 }
 
 .bold {
