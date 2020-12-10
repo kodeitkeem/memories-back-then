@@ -40,21 +40,21 @@
 
 ## &#x1f4f7; Application Images
 * Main Application Landing Page
-<img src="https://raw.githubusercontent.com/kodeitkeem/memories-back-then/master/public/imgs/screenshots/main-landing-page.png" width="450"/>
+<img src="https://raw.githubusercontent.com/kodeitkeem/memories-back-then/master/public/imgs/screenshots/main-landing-page.png" width="600"/>
 
 * Logged-In - User Memories Landing Page
-<img src="https://raw.githubusercontent.com/kodeitkeem/memories-back-then/master/public/imgs/screenshots/users-memories-landing-page.png" width="450"/>
+<img src="https://raw.githubusercontent.com/kodeitkeem/memories-back-then/master/public/imgs/screenshots/users-memories-landing-page.png" width="600"/>
 
 * Upload a Memory Page
-<img src="https://raw.githubusercontent.com/kodeitkeem/memories-back-then/master/public/imgs/screenshots/upload-memory-page.png" width="450"/>
+<img src="https://raw.githubusercontent.com/kodeitkeem/memories-back-then/master/public/imgs/screenshots/upload-memory-page.png" width="600"/>
 
 * View a Memory Details Page
-<img src="https://raw.githubusercontent.com/kodeitkeem/memories-back-then/master/public/imgs/screenshots/view-memory-page.png" width="450"/>
+<img src="https://raw.githubusercontent.com/kodeitkeem/memories-back-then/master/public/imgs/screenshots/view-memory-page.png" width="600"/>
 
 * Edit a Memory Page
-<img src="https://raw.githubusercontent.com/kodeitkeem/memories-back-then/master/public/imgs/screenshots/edit-memory-page.png" width="450"/>
+<img src="https://raw.githubusercontent.com/kodeitkeem/memories-back-then/master/public/imgs/screenshots/edit-memory-page.png" width="600"/>
 
 * Delete a Memory Page
-<img src="https://raw.githubusercontent.com/kodeitkeem/memories-back-then/master/public/imgs/screenshots/delete-memory-page.png" width="450"/>
+<img src="https://raw.githubusercontent.com/kodeitkeem/memories-back-then/master/public/imgs/screenshots/delete-memory-page.png" width="600"/>
 
 
